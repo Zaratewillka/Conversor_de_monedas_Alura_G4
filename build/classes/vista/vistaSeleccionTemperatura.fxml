@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="347.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaSeleccionTemperaturaController">
+   <children>
+      <Label layoutX="86.0" layoutY="34.0" text="Selecciona a qué sistema se va a convertir:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbxSistTemperatura" layoutX="312.0" layoutY="186.0" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #CCCCCC;" />
+      <Button alignment="CENTER" layoutX="236.0" layoutY="272.0" mnemonicParsing="false" onAction="#llamaResultadoTemperatura" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: #CCCCCC;" text="OK">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_temp_recuperada" layoutX="348.0" layoutY="103.0" text="Temp" textFill="#3b8d0b">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="106.0" prefHeight="27.0" prefWidth="252.0" text="Temperatura que se va a convertir:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

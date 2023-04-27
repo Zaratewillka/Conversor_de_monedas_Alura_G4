@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="263.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaDeseasContinuarController">
+   <children>
+      <Label layoutX="37.0" layoutY="41.0" text="Selecciona una opción:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="84.0" text="¿Deseas continuar?">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="74.0" layoutY="163.0" mnemonicParsing="false" onAction="#llamaMenuInicial" prefHeight="17.0" prefWidth="159.0" style="-fx-background-color: #CCCCCC;" text="SI">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="314.0" layoutY="163.0" mnemonicParsing="false" onAction="#llamaProgramaTerminado" prefHeight="34.0" prefWidth="169.0" style="-fx-background-color: #CCCCCC;" text="NO">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

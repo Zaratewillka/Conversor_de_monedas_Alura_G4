@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaSeleccionadorMonedaController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="MONEDAS">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="61.0" text="Elige la moneda a la que deseas convertir tu dinero">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="100.0" layoutY="277.0" mnemonicParsing="false" onAction="#llamaResultadoConversion" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #CCCCCC;" text="OK" />
+      <Button alignment="CENTER" layoutX="346.0" layoutY="277.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #CCCCCC;" text="CANCELAR" />
+      <ComboBox fx:id="micbxSeleccionMonedas" layoutX="210.0" layoutY="169.0" onAction="#elementoCmbxCambiado" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #CCCCCC;" />
+      <Label layoutX="37.0" layoutY="108.0" prefHeight="27.0" prefWidth="263.0" text="Cantidad de dinero a convertir">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_dinero_copiado" layoutX="293.0" layoutY="101.0" prefHeight="38.0" prefWidth="135.0" style="-fx-background-color: #87A0B0;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
